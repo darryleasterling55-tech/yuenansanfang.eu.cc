@@ -1,0 +1,662 @@
+﻿/* =====================================================
+   UKPay Contact Page Style
+   联系我们页面高级金融风格
+===================================================== */
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* ===============================
+   联系Banner
+================================ */
+
+
+.contact-banner {
+    padding: 130px 20px;
+    background: linear-gradient( 135deg, #06152d, #12428a );
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+    .contact-banner::before {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        right: -180px;
+        top: -180px;
+        background: rgba(255,255,255,.08);
+        border-radius: 50%;
+    }
+
+
+
+
+    .contact-banner::after {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        left: -150px;
+        bottom: -150px;
+        background: rgba(18,100,255,.2);
+        border-radius: 50%;
+    }
+
+
+
+
+
+
+    .contact-banner h1 {
+        position: relative;
+        z-index: 2;
+        font-size: 44px;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+
+
+
+    .contact-banner p {
+        position: relative;
+        z-index: 2;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #d8e5ff;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 联系介绍
+================================ */
+
+
+.contact-intro {
+    padding: 90px 0;
+    background: #fff;
+}
+
+
+
+
+.section-title {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+
+
+
+    .section-title h2 {
+        font-size: 36px;
+        color: #091d42;
+        margin-bottom: 20px;
+    }
+
+
+
+    .section-title p {
+        font-size: 17px;
+        color: #687386;
+        line-height: 1.9;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 联系卡片
+================================ */
+
+
+.contact-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+
+
+
+.contact-card {
+    background: #fff;
+    padding: 40px 35px;
+    border-radius: 25px;
+    border: 1px solid #edf2f8;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+
+
+
+
+
+    .contact-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient( 90deg, #1264ff, #00c6ff );
+        transform: scaleX(0);
+        transition: .35s;
+    }
+
+
+
+
+
+    .contact-card:hover::before {
+        transform: scaleX(1);
+    }
+
+
+
+
+
+    .contact-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 60px rgba(8,30,70,.12);
+    }
+
+
+
+
+
+.icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #edf5ff;
+    color: #1264ff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+.contact-card h3 {
+    font-size: 22px;
+    color: #10254b;
+    margin-bottom: 18px;
+}
+
+
+
+
+
+.contact-card p {
+    font-size: 15px;
+    color: #687386;
+    line-height: 1.9;
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 合作方向
+================================ */
+
+
+.cooperation {
+    padding: 90px 0;
+    background: #f6f8fc;
+}
+
+
+
+
+
+    .cooperation h2 {
+        text-align: center;
+        font-size: 36px;
+        color: #091d42;
+        margin-bottom: 55px;
+    }
+
+
+
+
+.cooperation-list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+
+
+
+
+
+    .cooperation-list div {
+        background: white;
+        padding: 35px 25px;
+        border-radius: 20px;
+        border: 1px solid #edf2fa;
+        transition: .35s;
+    }
+
+
+
+
+
+
+
+        .cooperation-list div:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 45px rgba(8,30,70,.1);
+        }
+
+
+
+
+
+    .cooperation-list h3 {
+        font-size: 20px;
+        color: #10254b;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+    .cooperation-list p {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #687386;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 联系面板
+================================ */
+
+
+.contact-box {
+    padding: 90px 0;
+    background: #fff;
+}
+
+
+
+
+
+
+.contact-panel {
+    background: linear-gradient( 135deg, #071936, #123b78 );
+    border-radius: 35px;
+    padding: 70px 50px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+    .contact-panel::after {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        right: -100px;
+        top: -100px;
+        background: rgba(255,255,255,.1);
+        border-radius: 50%;
+    }
+
+
+
+
+
+
+    .contact-panel h2 {
+        position: relative;
+        z-index: 2;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+    .contact-panel > p {
+        position: relative;
+        z-index: 2;
+        color: #d9e5ff;
+        font-size: 17px;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 联系信息
+================================ */
+
+
+.contact-info {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+
+    .contact-info div {
+        min-width: 220px;
+    }
+
+
+
+
+    .contact-info span {
+        display: block;
+        color: #9fc2ff;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+
+
+
+    .contact-info p {
+        color: #fff;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 咨询按钮
+================================ */
+
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 45px;
+    border-radius: 50px;
+    background: #fff;
+    color: #1264ff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .35s;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+    .contact-btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(255,255,255,.25);
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ Footer
+================================ */
+
+
+footer {
+    background: #06152d;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+    footer h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+
+
+    footer p {
+        color: #cbd5e1;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 平板适配
+================================ */
+
+
+@media(max-width:1000px) {
+
+
+
+    .contact-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+
+    .cooperation-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+
+    .contact-info {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 手机适配
+================================ */
+
+
+@media(max-width:700px) {
+
+
+
+    .contact-banner {
+        padding: 80px 20px;
+    }
+
+
+
+        .contact-banner h1 {
+            font-size: 28px;
+        }
+
+
+
+        .contact-banner p {
+            font-size: 15px;
+        }
+
+
+
+
+    .contact-intro {
+        padding: 60px 20px;
+    }
+
+
+
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+
+
+
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .contact-card {
+        padding: 30px 25px;
+    }
+
+
+
+
+    .cooperation {
+        padding: 60px 20px;
+    }
+
+
+
+        .cooperation h2 {
+            font-size: 26px;
+        }
+
+
+
+    .cooperation-list {
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+    .contact-box {
+        padding: 60px 20px;
+    }
+
+
+
+
+
+    .contact-panel {
+        padding: 45px 25px;
+        border-radius: 25px;
+    }
+
+
+
+        .contact-panel h2 {
+            font-size: 26px;
+        }
+
+
+
+
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+        .contact-info div {
+            min-width: auto;
+        }
+
+
+
+    .contact-btn {
+        padding: 14px 35px;
+    }
+}
